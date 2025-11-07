@@ -1,0 +1,149 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:fantasy;
+    background-image: url(newyear.png);
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;  
+    height: 100vh;  
+    color: #007025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.wrapper {
+    text-align: center;
+    
+}
+
+
+#header {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.flip-clock-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+
+.flip-clock-wrapper ul {
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.flip-clock-wrapper .flip {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.small {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 20px;
+} */
+
+
+
+ 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy;
+    background-image: url(newyear.png);
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;  
+    min-height: 100vh;  
+    color: #007025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#header {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 20px;
+}
+
+.flip-clock-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.flip-clock-wrapper ul {
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.flip-clock-wrapper .flip {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.small {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 20px;
+}
+
+/* Tablet და მობილური */
+@media (max-width: 768px) {
+    .flip-clock-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .flip-clock-wrapper ul {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+/* ძალიან პატარა ეკრანები */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
+    #header {
+        margin-bottom: 15px;
+    }
+    
+    .flip-clock-wrapper ul {
+        width: 90%;
+    }
+}
